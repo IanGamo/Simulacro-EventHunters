@@ -1,0 +1,373 @@
+/*/////////////////////////////////////*/
+/* Aquí pondremos todo el código relacionado
+con las páginas de registro, login y usuarios */
+/*/////////////////////////////////////*/
+/*        LOGIN/REGISTRO/CUENTA        */
+/*/////////////////////////////////////*/
+main{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+}
+#contForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* margin: 50px 0; */
+}
+#contTitle{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#contInputs{
+    width: 24rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+#contInputs2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttonImage{
+    font-size: .9em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    filter: grayscale(1);
+}
+.buttonImage svg{
+    width: 11px;
+}
+#contInputs input,
+#contInputs button,
+#contInputs2 input,
+/* #contInputs2 button, */
+.buttonImage{
+    padding: 15px;
+    border-radius: 15px;
+}
+#contInputs input,
+#contInputs2 input,
+.buttonImage{
+    border: none;
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 7px #5a5a5a21, inset 0px -48px 9px var(--cl-white);
+}
+#contInputs button,
+/* #contInputs2 button, */
+.buttonImage{
+    border: none;
+    font-family: 'Montserrat-Bold';
+    color: var(--cl-white);
+    background: var(--cl-selection);
+    box-shadow: 3px 3px 10px #d9d9d9, -5px -5px 10px var(--cl-white);
+    cursor: pointer;
+    transition: 250ms;
+}
+#contInputs button:hover,
+/* #contInputs2 button:hover, */
+.buttonImage:hover{
+    background: var(--cl-selection-oscure);
+    transform: translateY(-1px);
+}
+.hrPadding{
+    /* padding: 0 25%;
+    margin: 25px; */
+    width: 45%;
+    padding: 0 25%;
+    margin: 25px auto;
+}
+#titleLogin h2,
+#titleRegistro h2{
+    font-weight: 600;
+    font-size: 3.1em;
+}
+#titleLogin h2:nth-child(2),
+#titleRegistro h2:nth-child(2){
+    text-align: end;
+}
+#imgProfile{
+    width: 100px;
+}
+#contTextTodo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+}
+#contTextInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Montserrat-Regular';
+}
+#contTextInfo span{
+    display: flex;
+    gap: 10px;
+}
+
+/*/////////////////////////////////////*/
+/*               CUENTA                */
+/*/////////////////////////////////////*/
+#widthCenter{
+    align-items: center;
+}
+.verifyMod{
+    background-color: #fff !important;
+    border: none !important;
+    color: var(--cl-green);
+    padding: 0px;
+}
+#imgProfile{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border: 1px solid var(--cl-selection-oscure);
+    background: var(--cl-black);
+    border-radius: 500px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#imgProfile img{
+    width: 150px;
+}
+.opacityImg{
+    opacity: .6;
+}
+
+/*/////////////////////////////////////*/
+/*               BUTTONS               */
+/*/////////////////////////////////////*/
+.btnLogin,
+.btnGoogle,
+.btnRegistro,
+.btnNext a{
+    cursor: pointer;
+}
+.btnNext,
+.btnNext a{
+    border: none;
+    background-color: #fff;
+    color: var(--cl-grey);
+}
+.btnDelete{
+    color: var(--cl-red);
+}
+.btnCrEvent{
+    margin-top: 15px;
+}
+#email{
+    opacity: .5;
+}
+#contSession{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+#contSessionCount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.contSessionCount{
+    justify-content: flex-start !important;
+}
+#contSessionCount input{
+    background-color: #fff !important;
+    border: none !important;
+    color: var(--cl-green);
+    padding: 0px;
+    box-shadow: inset 2px 2px 7px #ffffff21, inset 0px -48px 9px #ffffff;
+}
+#contModifyButton{
+    display: flex;
+    gap: 15px;
+}
+.btnModify{
+    border: none;
+    background-color: #fff;
+}
+.btnGoogle{
+    border-radius: 50px;
+    border: 3px solid #4285f4;
+    border: none;
+    background-color: var(--cl-white);
+
+    width: 30em;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cPointer{
+    cursor: pointer;
+}
+.contVolver{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 250ms;
+}
+.arrowVolver{
+    width: 9px;
+    fill: var(--cl-black);
+    position: relative;
+}
+.contVolver:hover .arrowVolver{
+    right: 5px;
+}
+/*/////////////////////////////////////*/
+/*                SIZE                 */
+/*/////////////////////////////////////*/
+.btnGoogle,
+.btnNext a{
+    font-size: .9em;
+}
+.imgSize{
+    width: 1.4em;
+    margin-right: 15px;
+    transition: 250ms;
+}
+.btnGoogle:hover .imgSize{
+    transform: rotateZ(-21deg);
+}
+.notVisible,
+.btnModify svg{
+    width: 20px;
+    height: 20px;
+}
+
+/* /////////////////////////////////// */
+/*           INPUTS MODIFY             */
+/*/////////////////////////////////////*/
+.inputMod,
+.inputMod_enable{
+    background: #fff !important;
+    border-bottom: 1px var(--cl-black) !important;
+    border-radius: 0px !important;
+    padding: 0px 0px 3px 10px !important;
+    margin-bottom: 9px;
+}
+.inputMod{
+    box-shadow: inset 0px -1px 0px 0px var(--cl-grey), 
+                inset 0px 0px 0px #fff !important;
+}
+.inputMod_enable{
+    box-shadow: inset 0px -1px 0px 0px var(--cl-grey-opac), 
+                inset 0px 0px 0px #fff !important;
+}
+
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+/*-------------------------------------*/
+/*               EXTRAS                */
+/*-------------------------------------*/
+@media only screen and (max-width: 1589px){
+    /* Login/Registro contenedor */
+    #contTitle {
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 1424px){
+    /* Login/Registro contenedor */
+    #contTitle {
+        width: 66%;
+    }
+    .hrPadding {
+        padding: 0 33%;
+    }
+}
+@media only screen and (max-width: 1080px){
+    /* Login/Registro contenedor */
+    #contTitle {
+        width: 72%;
+    }
+    .hrPadding {
+        padding: 0 42%;
+    }
+}
+
+/*-------------------------------------*/
+/*               TABLET                */
+/*-------------------------------------*/
+@media only screen and (max-width: 1000px){
+    /* Login/Registro contenedor */
+    #contTitle {
+        width: 85%;
+    }
+    .hrPadding {
+        padding: 0 44%;
+    }
+}
+/*-------------------------------------*/
+/*            MOVIL PEQUEÑO            */
+/*-------------------------------------*/
+@media only screen and (max-width: 795px){
+    /* Titulo  */
+    #contTitle{
+        flex-direction: column;
+        align-items: center;
+    }
+    #titleLogin,
+    #titleRegistro{
+        display: flex;
+        gap: 20px;
+        padding: 0 20px 20px 20px;
+    }
+    #titleRegistro{
+        flex-direction: column;
+    }
+    #titleRegistro div {
+        gap: 20px;
+        display: flex;
+    }
+    #titleRegistro h3{
+        display: flex;
+        justify-content: center;
+    }
+    #titleLogin h2 {
+        font-size: 8.7vw;
+    }
+    #titleRegistro h2 {
+        font-size: 8.3vw;
+    }
+    /* Formulario */
+    #contInputs,
+    #contInputs2 {
+        width: 100%;
+    }
+    #contInputs2 {
+        flex-direction: column;
+    }
+    #contTextTodo {
+        gap: 15px;
+    }
+    /* Google */
+    #contSession {
+        width: 85%;
+    }
+    .btnGoogle {
+        width: 100%;
+    }
+}

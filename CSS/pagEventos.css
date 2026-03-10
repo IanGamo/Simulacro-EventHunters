@@ -1,0 +1,247 @@
+/* pagEventos.css */
+/* Estilos específicos para la página de eventos del usuario */
+
+/* Margen superior para separar del header */
+main {
+    padding-top: 50px;
+    height: 100%;
+    padding-bottom: 80px;
+    /* Espacio para el footer */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    /* Más padding inferior para el botón */
+    position: relative;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+header h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #a35cf8;
+    border-radius: 2px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(163, 92, 248, 0.15);
+    border-color: #e0d0f5;
+}
+
+.event-image {
+    height: 200px;
+    background: #f8f5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a35cf8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-content {
+    padding: 25px;
+}
+
+.event-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    position: relative;
+}
+
+.event-title::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #a35cf8;
+}
+
+.event-details {
+    margin: 20px 0;
+}
+
+.detail-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.detail-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(163, 92, 248, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #a35cf8;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.detail-text {
+    flex: 1;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.detail-value {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.price-tag {
+    display: inline-block;
+    background: rgba(163, 92, 248, 0.1);
+    color: #a35cf8;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.no-events {
+    text-align: center;
+    color: #777;
+    font-size: 1.2rem;
+    padding: 60px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-top: 30px;
+    border: 1px solid #f0f0f0;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.no-events p {
+    margin-bottom: 20px;
+}
+
+.container footer {
+    text-align: center;
+    color: #777;
+    margin-top: 70px;
+    padding: 30px 0 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+
+
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .event-image {
+        height: 180px;
+        font-size: 1.3rem;
+    }
+
+    main {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px 40px;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        padding-bottom: 15px;
+    }
+
+    .event-card {
+        border-radius: 10px;
+    }
+
+    .event-content {
+        padding: 20px;
+    }
+
+    #contSession {
+        margin: 40px 0 20px;
+    }
+
+    .btnNext {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}

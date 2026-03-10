@@ -1,0 +1,356 @@
+/*/////////////////////////////////////*/
+/* Aquí pondremos todo el código relacionado
+con la página de inicio */
+/*/////////////////////////////////////*/
+/*               PORTADA               */
+/*/////////////////////////////////////*/
+body {
+    height: 100% !important;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+#contPortada{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 85vh 0; */
+    color: var(--cl-white);
+    /* background-image: url(../IMG/fondoProvisional.jpg); */
+    background: linear-gradient(180deg, #ffffff, #a35cf8 95%);
+    background-size: cover;
+}
+.sphere1 h1{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.sphere1 p{
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: Montserrat-Regular;
+    z-index: 2;
+}
+.sphere1 video{
+    width: 100%;
+}
+
+/* Separador */
+#contSep{
+    width: 100%;
+    background-color: var(--cl-white);
+    display: flex;
+    flex-direction: column;
+}
+#contSep span{
+    position: relative;
+    padding: 2px;
+    background-color: var(--cl-selection);
+    height: 1px;
+}
+#contSep span:nth-child(1){
+    width: 40%;
+}
+#contSep span:nth-child(2){
+    width: 60%;
+    left: 40%;
+}
+#contSep span:nth-child(3){
+    width: 20%;
+    left: 11%;
+}
+#contSep span:nth-child(4){
+    width: 11%;
+}
+#contSep span:nth-child(5){
+    width: 15%;
+    left: 30%;
+}
+#contSep span:nth-child(6){
+    width: 30%;
+    left: 65%;
+}
+#contSep span:nth-child(7){
+    width: 25%;
+    left: 40%;
+}
+#contSep span:nth-child(8){
+    width: 25%;
+    left: 4%;
+}
+#contSep span:nth-child(9){
+    width: 10%;
+    left: 90%;
+}
+
+/* Hero de la landing (es la seccion de sobrenosotros) */
+.hero {
+    padding: 80px 20px;
+    background-color: var(--cl-white);
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.contenido-texto {
+    flex: 1;
+    max-width: 600px;
+}
+
+.contenedor-imagen {
+    flex: 1;
+    max-width: 500px;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--cl-black);
+}
+
+.divisor {
+    width: 50px;
+    height: 2px;
+    background-color: #a35cf8;
+    border: none;
+    margin: 0 auto 2rem 0;
+}
+
+.texto {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--cl-grey);
+    margin-bottom: 2.5rem;
+    font-weight: 100;
+    font-family: Montserrat-Regular;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #a35cf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 900;
+    font-family: 'Montserrat-Regular';
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #a25cf8a8;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .divisor {
+        margin: 0 auto 2rem auto;
+    }
+    
+    .contenido-texto {
+        order: 2;
+    }
+    
+    .contenedor-imagen {
+        order: 1;
+        max-width: 400px;
+    }
+    
+    .titulo {
+        font-size: 2rem;
+    }
+    
+    .texto {
+        font-size: 1rem;
+    }
+}
+.sphere1{
+    /* background: red; */
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100%;
+    background: linear-gradient(0deg, #ffffff, #a35cf8 95%);
+
+    animation: wiggle 11.1s infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: translate(-51%, -51%) rotate(0deg); }
+    20% { transform: translate(-51%, -50%) rotate(1deg); }
+    40% { transform: translate(-50%, -51%) rotate(1deg); }
+    60% { transform: translate(-51%, -50%) rotate(0deg); }
+    80% { transform: translate(-51%, -51%) rotate(1deg); }
+    100% { transform: translate(-51%, -51%) rotate(0deg); }
+}
+.sphere2{
+    width: 134px;
+    height: 134px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    border-radius: 100%;
+    background: linear-gradient(0deg, #ffffff, #a35cf8 95%);
+    
+    animation: wiggle2 9.5s infinite;
+}
+@keyframes wiggle2 {
+    0% { transform: translate(-29%, -18%) rotate(0deg); }
+    20% { transform: translate(-28%, -13%) rotate(0deg); }
+    40% { transform: translate(-20%, -18%) rotate(1deg); }
+    60% { transform: translate(-28%, -13%) rotate(0deg); }
+    80% { transform: translate(-26%, -10%) rotate(1deg); }  
+    100% { transform: translate(-29%, -18%) rotate(0deg); }
+}
+.sphere3{
+    width: 77px;
+    height: 77px;
+    position: absolute;
+    top: 56%;
+    right: 20%;
+    border-radius: 100%;
+    background: linear-gradient(0deg, #ffffff, #a35cf8 95%);
+
+    animation: wiggle3 8.1s infinite;
+}
+@keyframes wiggle3 {
+    0% { transform: translate(-56%, -16%) rotate(0deg); }
+    20% { transform: translate(-57%, -20%) rotate(1deg); }
+    40% { transform: translate(-56%, -25%) rotate(1deg); }
+    60% { transform: translate(-58%, -20%) rotate(0deg); }
+    80% { transform: translate(-57%, -16%) rotate(1deg); }
+    90% { transform: translate(-57%, -23%) rotate(0deg); }
+    100% { transform: translate(-56%, -16%) rotate(0deg); }
+}
+.sphere4{
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 52%;
+    right: 18%;
+    border-radius: 100%;
+    background: linear-gradient(0deg, #ffffff, #a35cf8 95%);
+
+    animation: wiggle4 7.1s infinite;
+}
+@keyframes wiggle4 {
+    0% { transform: translate(-50%, -16%) rotate(0deg); }
+    10% { transform: translate(-56%, -25%) rotate(1deg); }
+    30% { transform: translate(-45%, -23%) rotate(0deg); }
+    40% { transform: translate(-50%, -14%) rotate(1deg); }
+    50% { transform: translate(-56%, -25%) rotate(0deg); }
+    60% { transform: translate(-56%, -25%) rotate(0deg); }
+    80% { transform: translate(-45%, -16%) rotate(1deg); }
+    100% { transform: translate(-50%, -16%) rotate(0deg); }
+}
+
+/*/////////////////////////////////////*/
+/*               MEDIA                 */
+/*/////////////////////////////////////*/
+/*-------------------------------------*/
+/*               EXTRAS                */
+/*-------------------------------------*/
+@media only screen and (max-width: 1700px){
+    .sphere1 {
+        width: 570px;
+        height: 570px;
+    }
+}
+@media only screen and (max-width: 1345px){
+    .sphere3 {
+        top: 74%;
+    }
+    .sphere4 {
+        top: 66%;
+    }
+}
+@media only screen and (max-width: 1138px){
+    .sphere2 {
+        top: 7%;
+    }
+}
+/*-------------------------------------*/
+/*               TABLET                */
+/*-------------------------------------*/
+@media only screen and (max-width: 1060px){
+    .sphere1 {
+        width: 500px;
+        height: 500px;
+    }
+}
+/*-------------------------------------*/
+/*                MOVIL                */
+/*-------------------------------------*/
+@media only screen and (max-width: 770px){
+    #contPortada {
+        min-height: 85vh;
+    }
+    .sphere1 {
+        width: 434px;
+        height: 434px;
+    }
+    /* Eventos */
+    .eventos-disponibles__titulo,
+    .eventos-disponibles__subtitulo{
+        text-align: center;
+    }    
+    .eventos-disponibles__vermas-container{
+        float: none;
+    }
+    .eventos-disponibles__grid {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}
+@media only screen and (max-width: 510px){
+    #contPortada {
+        min-height: 80vh;
+    }
+    .sphere1 {
+        width: 334px;
+        height: 334px;
+    }
+    .sphere2 {
+        top: 11%;
+    }
+    .sphere3 {
+        top: 74%;
+    }
+    .sphere4 {
+        top: 67%;
+    }
+}
