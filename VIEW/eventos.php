@@ -195,7 +195,7 @@ $eventos = $eventController->index();
             <div class="eventos-disponibles__grid">
                 <?php
                 // Display free events from the database
-                $freeEvents = $eventController->indexFree();
+                $freeEvents = $eventController->indexFree(); // fix commit 1# (Me equivoque de branch)
 
                 if (!empty($freeEvents)) {
                     $count = 0;
