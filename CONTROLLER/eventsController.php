@@ -1,4 +1,5 @@
 <!-- . -->
+
 <?php
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     session_start();
@@ -27,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 }
 
-
+// first commit
 class eventController
 {
     private $conn;
